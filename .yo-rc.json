@@ -1,0 +1,30 @@
+{
+  "generator-jhipster": {
+    "baseName": "basketball",
+    "packageName": "com.mycompany.myapp",
+    "packageFolder": "com/mycompany/myapp",
+    "authenticationType": "oauth2",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": true,
+    "enableSocialSignIn": false,
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhipsterVersion": "3.2.1",
+    "serverPort": "8080",
+    "applicationType": "monolith",
+    "jhiPrefix": "jhi",
+    "languages": [
+      "es"
+    ]
+  }
+}

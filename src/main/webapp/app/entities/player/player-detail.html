@@ -1,0 +1,25 @@
+
+<div>
+    <h2><span translate="basketballApp.player.detail.title">Player</span> {{vm.player.id}}</h2>
+    <hr>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="basketballApp.player.name">Name</span></dt>
+        <dd>
+            <span>{{vm.player.name}}</span>
+        </dd>
+        <dt><span translate="basketballApp.player.baskets">Baskets</span></dt>
+        <dd>
+            <span>{{vm.player.baskets}}</span>
+        </dd>
+        <dt><span translate="basketballApp.player.birthday">Birthday</span></dt>
+        <dd>
+            <span>{{vm.player.birthday | date:'mediumDate'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

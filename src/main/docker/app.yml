@@ -1,0 +1,15 @@
+version: '2'
+services:
+    basketball-app:
+        image: basketball
+        external_links:
+            - basketball-mysql:mysql
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/basketball?useUnicode=true&characterEncoding=utf8&useSSL=false
+        ports:
+            - 8080:8080
+    basketball-mysql:
+        extends:
+            file: mysql.yml
+            service: basketball-mysql
